@@ -2,7 +2,7 @@ name: Auto Start VPS
 
 on:
   workflow_dispatch:
-  # Nếu muốn chạy theo giờ, bỏ comment và chỉnh cron (UTC)
+  # Nu mun chy theo gi, b comment v chnh cron (UTC)
   # schedule:
   #   - cron: "17 * * * *"
 
@@ -15,7 +15,7 @@ jobs:
     timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
-      - name: Simulate work (20–40m)
+      - name: Simulate work (20-40m)
         run: |
           python - <<'PY'
           import random, time
